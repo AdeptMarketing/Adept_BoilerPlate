@@ -1,0 +1,51 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+@sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@serif: Georgia, Times, 'Times New Roman', serif;
+@fontcolor: #333;
+@linkcolor:#06C;
+@linkhover :#999;
+@lineHeight:1.5rem;
+
+
+/* ==========================================================================
+   TEXT HELPERS
+   ========================================================================== */
+.font-size(@sizeValue, @lines:1){
+  	@remValue: @sizeValue;
+  	@pxValue: (@sizeValue * 10);
+  	font-size: ~"@{pxValue}px"; 
+  	font-size: ~"@{remValue}rem";
+	line-height:@lines * @lineHeight;
+}
+.center {text-align: center;}
+.normal {font-weight:400;}
+.semibold {font-weight:600;}
+.bold,strong {font-weight:700;}
+.uc {text-transform: uppercase;}
+
+/* ==========================================================================
+   DESIGN ELEMENTS
+   ========================================================================== */
+.box (@radius:5px, @padding:20px, @titlebg:#333, @color){
+	.border-radius(@radius);
+	padding:@padding;
+	.box-shadow(0 2px 2px rgba(0,0,0,.3));
+	.boxtitle {
+		-webkit-box-sizing:content-box;
+		   -moz-box-sizing:content-box;
+		        box-sizing:content-box;
+		width:100%;
+		.border-radius(@radius @radius 0 0);
+		padding:@padding;
+		margin-left:@padding*-1;
+		background:@titlebg;
+		color:@color;
+		.font-size(5.5);
+	}
+}
+
+.btn {
+	
+}
