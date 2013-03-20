@@ -12,13 +12,37 @@
 /* ==========================================================================
    TEXT HELPERS
    ========================================================================== */
-.font-size(@sizeValue, @lines:1){
-  	@remValue: @sizeValue;
-  	@pxValue: (@sizeValue * 10);
-  	font-size: ~"@{pxValue}px"; 
-  	font-size: ~"@{remValue}rem";
-	line-height:@lines * @lineHeight;
+//.font-size(@sizeValue, @lines:1){
+//  	@remValue: @sizeValue;
+//  	@pxValue: (@sizeValue * 10);
+//  	font-size: ~"@{pxValue}px"; 
+//  	font-size: ~"@{remValue}rem";
+//	line-height:@lines * @lineHeight;
+//}
+
+/** Font Size is in REMs,margins are mutiples of the base value
+    Line height is automatically set based upon the font size */
+.font-size(@sizeValue, @margin-bottom: 0, @margin-top: 0)
+{
+    @base: 2.2;
+	@remValue: @sizeValue;
+	@pxValue: (@sizeValue * 10);
+	@lineHeightRem: ceil(@sizeValue / @base)*@base;
+	@lineHeightPx:   (@lineHeightRem * 10);
+	@marginTopRem: (@margin-top * @base);
+	@marginTopPx: (@marginTopRem * 10);
+	@marginBottomRem: (@margin-bottom * @base);
+	@marginBottomPx: (@marginBottomRem * 10);
+	font-size: ~"@{pxValue}px";
+	font-size: ~"@{remValue}rem";
+	line-height: ~"@{lineHeightPx}px";
+	line-height: ~"@{lineHeightRem}rem";
+	margin-top: ~"@{marginTopPx}px";
+	margin-top: ~"@{marginTopRem}rem";
+	margin-bottom: ~"@{marginBottomPx}px";
+	margin-bottom: ~"@{marginBottomRem}rem";
 }
+
 .center {text-align: center;}
 .normal {font-weight:400;}
 .semibold {font-weight:600;}

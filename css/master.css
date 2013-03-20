@@ -13,7 +13,12 @@ h6 {
 h1 {
   font-size: 20px;
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 22px;
+  line-height: 2.2rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-bottom: 44px;
+  margin-bottom: 4.4rem;
   margin-bottom: .5rem;
   line-height: 3.2rem;
 }
@@ -223,7 +228,12 @@ body {
   color: #333333;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1.5rem;
+  line-height: 22px;
+  line-height: 2.2rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
   background: #fff;
   margin: 0;
   padding: 0;
@@ -365,6 +375,8 @@ body:after {
 /* ==========================================================================
    TEXT HELPERS
    ========================================================================== */
+/** Font Size is in REMs,margins are mutiples of the base value
+    Line height is automatically set based upon the font size */
 .center {
   text-align: center;
 }
@@ -429,7 +441,12 @@ strong {
   color: #ffffff;
   font-size: 55px;
   font-size: 5.5rem;
-  line-height: 1.5rem;
+  line-height: 66px;
+  line-height: 6.6000000000000005rem;
+  margin-top: 0px;
+  margin-top: 0rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 /* ==========================================================================
 	TYPOGRAPHY
