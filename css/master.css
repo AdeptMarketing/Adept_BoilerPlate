@@ -1,6 +1,7 @@
 /* ==========================================================================
    HTML ELEMENTS
-   ========================================================================== */h1,
+   ========================================================================== */
+h1,
 h2,
 h3,
 h4,
@@ -220,7 +221,6 @@ input[type="checkbox"],
 html {
   font-size: 62.5%;
   /* Sets up the Base 10 stuff */
-
 }
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -393,6 +393,13 @@ strong {
 .uc {
   text-transform: uppercase;
 }
+.anim {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
 /* ==========================================================================
    DESIGN ELEMENTS
    ========================================================================== */
@@ -400,53 +407,14 @@ strong {
 	GENERAL LAYOUT
    ========================================================================== */
 * {
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.box-sample {
-  -webkit-border-radius: 10px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 10px;
-  -moz-background-clip: padding;
-  border-radius: 10px;
-  background-clip: padding-box;
-  padding: 50px;
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-  color: 0 2px 2px rgba(0, 0, 0, 0.3);
-}
-.box-sample .boxtitle {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 100%;
-  -webkit-border-radius: 10px 10px 0 0;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 10px 10px 0 0;
-  -moz-background-clip: padding;
-  border-radius: 10px 10px 0 0;
-  background-clip: padding-box;
-  padding: 50px;
-  margin-left: -50px;
-  background: #999900;
-  color: #ffffff;
-  font-size: 55px;
-  font-size: 5.5rem;
-  line-height: 66px;
-  line-height: 6.6000000000000005rem;
-  margin-top: 0px;
-  margin-top: 0rem;
-  margin-bottom: 0px;
-  margin-bottom: 0rem;
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
 }
 /* ==========================================================================
 	TYPOGRAPHY
@@ -469,6 +437,3 @@ strong {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  
-}

@@ -30,5 +30,23 @@
 	<!--[if lt IE 7]>
 		<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	<![endif]-->
+<header>
+	<div class="container">
+		<a id="logo" class="graphic" href="<?php echo $root; ?>"></a>
+		
+		<nav id="util">
+			<ul>
+				
+			</ul>
+		</nav> <!-- util -->
+		
+		<nav id="main">
+			<ul>
+				
+			</ul>
+		</nav>
+	</div> <!-- container -->
+	<div class="clear"></div>
+</header>
 
 
