@@ -45,18 +45,20 @@
 }
 
 .center {text-align: center;}
+.light {font-weight: 100;}
 .normal {font-weight:400;}
 .semibold {font-weight:600;}
 .bold,strong {font-weight:700;}
 .uc {text-transform: uppercase;}
+.italic {font-style: italic;}
 
 
-.anim {
-	-webkit-transition:all .3s ease-out;
-	   -moz-transition:all .3s ease-out;
-	    -ms-transition:all .3s ease-out;
-	     -o-transition:all .3s ease-out;
-	        transition:all .3s ease-out;
+.anim(@time:.3s) {
+	-webkit-transition:all @time ease-out;
+	   -moz-transition:all @time ease-out;
+	    -ms-transition:all @time ease-out;
+	     -o-transition:all @time ease-out;
+	        transition:all @time ease-out;
 }
 /* ==========================================================================
    DESIGN ELEMENTS
@@ -79,6 +81,6 @@
 	}
 }
 
-.btn {
+a.btn, .btn {
 	
 }
